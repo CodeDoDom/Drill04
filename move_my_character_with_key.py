@@ -43,15 +43,15 @@ dir_UD = 0
 while running:
     clear_canvas()
     background.draw(400, 300)
-    if dir_LR == 0 and dir_UD == 0: # IDLE 상태
+    if dir_LR == 0 and dir_UD == 0:
         character.clip_draw(0, 728, 96, 104, window_x, window_y)
-    elif dir_LR == 1:  # 오른쪽 이동 상태
+    elif dir_LR == 1:
         character.clip_draw(frame * 96, 0, 96, 104, window_x, window_y)
-    elif dir_LR == -1:  # 왼쪽 이동 상태
+    elif dir_LR == -1:
         character.clip_draw(frame * 97, 208, 96, 104, window_x, window_y)
-    elif dir_UD == 1:   # 위쪽 이동 상태
+    elif dir_UD == 1:
         character.clip_draw(frame * 96, 104, 96, 104, window_x, window_y)
-    elif dir_UD == -1:  # 아래쪽 이동 상태
+    elif dir_UD == -1:
         character.clip_draw(frame * 96, 312, 96, 104, window_x, window_y)
     update_canvas()
     handle_events()

@@ -1,6 +1,7 @@
 from pico2d import *
 
 open_canvas()
+background = load_image('zelda_map.png')
 character = load_image('animation_sheet_link.png')
 
 def handle_events():
@@ -41,6 +42,7 @@ dir_UD = 0
 
 while running:
     clear_canvas()
+    background.draw(400, 300)
     if dir_LR == 0 and dir_UD == 0: # IDLE 상태
         character.clip_draw(0, 728, 96, 104, window_x, window_y)
     elif dir_LR == 1:  # 오른쪽 이동 상태

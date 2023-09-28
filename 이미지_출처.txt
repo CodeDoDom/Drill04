@@ -1,0 +1,2 @@
+링크 스프라이트 시트(animation_sheet_link) 출처: https://discuss.cocos2d-x.org/t/how-to-handle-spritesheet-animations-in-cocos-creator/43256
+

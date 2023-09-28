@@ -49,6 +49,8 @@ while running:
         character.clip_draw(frame * 97, 208, 96, 104, window_x, window_y)
     elif dir_UD == 1:   # 위쪽 이동 상태
         character.clip_draw(frame * 96, 104, 96, 104, window_x, window_y)
+    elif dir_UD == -1:  # 아래쪽 이동 상태
+        character.clip_draw(frame * 96, 312, 96, 104, window_x, window_y)
     update_canvas()
     handle_events()
     frame = (frame + 1) % 10
